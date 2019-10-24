@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="box">
+<button type="button" onclick="checkMail()">check</button>
+<script>
+    // let mail = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+
+    function checkMail() {
+        let room = document.getElementById("box").value;
+        let mail = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        if (mail.test(room) ==false ) {
+            alert("mail ko hợp lệ")
+        }else {
+            alert("mail hợp lệ")
+        }
+
+    }
+</script>
+</body>
+</html>
